@@ -113,7 +113,7 @@ else:
     st.warning("Impossibile caricare i modelli. Verifica la presenza dei file e riavvia l'app se necessario.")
 
 
-user_input = st.text_area("Inserisci una frase da analizzare:", height=100, placeholder="Es: Le persone di quel tipo sono...")
+user_input = st.text_area("Inserisci una frase da analizzare (in inglese):", height=100, placeholder="Es: people like this are...")
 
 if st.button("Analizza Frase"):
     if sbert_predictor and scaler_predictor and keras_predictor: # Controlla che i modelli siano caricati
